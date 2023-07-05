@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB COLOR SLIDER</title>
+    <!-- CSS LINK HERE -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Wrapper">
+        R <input type="range" min="0" max="255" id="red" oninput="colors()" />
+      </div>
+
+      <div class="Wrapper">
+        G <input type="range" min="0" max="255" id="green" oninput="colors()" />
+      </div>
+
+      <div class="Wrapper">
+        B <input type="range" min="0" max="255" id="blue" oninput="colors()" />
+      </div>
+      <span id="output">rgb(0,0,0)</span>
+    </div>
+
+    <!-- JAVASCRIPT LINK HERE -->
+    <script src="./script.js"></script>
+  </body>
+</html>
